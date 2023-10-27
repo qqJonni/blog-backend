@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 COMPANY_COORDINATES = [55.751244, 37.618423]
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", [])
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", ["127.0.0.1"])
 
 SECRET_KEY = env.str("SECRET_KEY", "REPLACE_ME")
 

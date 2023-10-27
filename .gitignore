@@ -1,3 +1,7 @@
+bundles/**
+node_modules/
+media/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -5,7 +9,8 @@ __pycache__/
 
 # C extensions
 *.so
-
+.idea
+/.idea
 # Distribution / packaging
 .Python
 build/
@@ -136,3 +141,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+.parcel-cache/
