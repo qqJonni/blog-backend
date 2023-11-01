@@ -4,34 +4,34 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block hero_banner %}
-    <section class="mb-30px">
-      <div class="container">
-        <div class="hero-banner hero-banner--sm">
-          <div class="hero-banner__content">
-            <h1>Blog details</h1>
-            <nav aria-label="breadcrumb" class="banner-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
-              </ol>
-            </nav>
-          </div>
+  <section class="mb-30px">
+    <div class="container">
+      <div class="hero-banner hero-banner--sm">
+        <div class="hero-banner__content">
+          <h1>Blog details</h1>
+          <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+            </ol>
+          </nav>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 {% endblock %}
 
 {% block blog_post %}
-	  <section class="blog-post-area section-margin">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="main_blog_details">
-                {% if post.image_url %}
+  <section class="blog-post-area section-margin">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="main_blog_details">
+            {% if post.image_url %}
               <img class="img-fluid" src="{{ post.image.url }}" alt="">
-                {% else %}
+            {% else %}
               <img class="img-fluid" src="{% static 'img/blog/blog4.png' %}" alt="">
-                {% endif %}
+            {% endif %}
               <h4>Cartridge Is Better Than Ever <br />{{ post.title }}</h4>
               <div class="user_details">
                 <div class="mt-sm-0 mt-3">
@@ -104,7 +104,7 @@
             </div>
           </div>
           <!-- End Blog Post Siddebar -->
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 {% endblock %}
